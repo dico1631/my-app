@@ -1,0 +1,32 @@
+{
+    "diaryData": [
+        {
+            "diaryId": 0,
+            "title": "오늘의 일기 1",
+            "content": "오늘의 일기 내용 1",
+            "point": 2,
+            "date": "2023-09-20"
+        },
+        {
+            "diaryId": 1,
+            "title": "오늘의 일기 2",
+            "content": "오늘의 일기 내용 2",
+            "point": 5,
+            "date": "2023-09-21"
+        },
+        {
+            "diaryId": 2,
+            "title": "오늘의 일기 3",
+            "content": "오늘의 일기 내용 3",
+            "point": 4,
+            "date": "2023-09-22"
+        },
+        {
+            "diaryId": 3,
+            "title": "오늘의 일기 4",
+            "content": "오늘의 일기 내용 4",
+            "point": 5,
+            "date": "2023-09-22"
+        }
+    ]
+}
