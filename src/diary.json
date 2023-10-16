@@ -3,41 +3,41 @@
         {
             "diaryId": 0,
             "title": "오늘의 일기",
-            "content": "오늘의 일기 내용",
+            "content": "오늘은 스크럼을 했다.",
             "point": 2,
             "date": "2023-09-20"
         },
         {
             "diaryId": 1,
-            "title": "오늘의 일기",
-            "content": "오늘의 일기 내용",
+            "title": "내일의 일기",
+            "content": "스위스 다시 가고 싶다.",
             "point": 5,
             "date": "2023-09-21"
         },
         {
             "diaryId": 2,
-            "title": "오늘의 일기",
-            "content": "오늘의 일기 내용",
+            "title": "민정이의 일기",
+            "content": "날씨는 좋고, 나는 오금이고~",
             "point": 4,
             "date": "2023-09-22"
         },
         {
             "diaryId": 3,
-            "title": "오늘의 일기",
-            "content": "오늘의 일기 내용",
+            "title": "고민정의 일기",
+            "content": "기획 보다 개발이 재밌음..",
             "point": 5,
             "date": "2023-09-22"
         },
         {
             "diaryId": 4,
-            "title": "오늘의 일기",
-            "content": "오늘의 일기 내용",
+            "title": "오늘, 내일의 일기",
+            "content": "이제 단발건 시작인가..ㅋㅋ",
             "point": 1,
             "date": "2023-09-20"
         },
         {
             "diaryId": 5,
-            "title": "오늘의 일기",
+            "title": "일기일기일기",
             "content": "오늘의 일기 내용",
             "point": 3,
             "date": "2023-09-20"

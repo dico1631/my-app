@@ -1,24 +1,20 @@
 import diaryData from "./diary.json"
 
-import PointFilter from "./component/PointFilter";
-import DiaryTable from "./component/DiaryTable";
+import { Routes, Route } from 'react-router-dom';
 
-import { useState } from "react";
+import DiaryListPage from "./component/DiaryListPage";
 
 const diarys = diaryData.diaryData;
 
 const App = () => {
-
-  const [point, setPoint] = useState(0);
-  const fliteredDiarys = diarys.filter(diary => diary.point >= point);
-
   return (
     <div>
       <h1>나의 일기</h1>
-      <PointFilter point={point} setPoint={setPoint}/>
-      <DiaryTable diarys={fliteredDiarys} />
+      <Routes>
+        <DiaryListPage diarys={diarys} />
+      </Routes>
     </div>
-  );
+  ); 
 }
 
 export default App;
