@@ -3,7 +3,7 @@ const PointFilter = ({ point, setPoint }) => {
 
   return (
     <>
-      <button>별점: {point}</button>
+      <h2>별점: {point}</h2>
       <ol>
         <li><button value={0} onClick={changePoint}>별점 전체</button></li>
         <li><button value={1} onClick={changePoint}>1</button></li>

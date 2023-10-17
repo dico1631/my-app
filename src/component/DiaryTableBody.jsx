@@ -1,10 +1,10 @@
 import DiaryRow from './DiaryRow';
 
-const DiaryTableBody = ({ diarys, setPopupText }) => (
+const DiaryTableBody = ({ diarys, setPopupText, setAlert }) => (
   <tbody>
     {
       diarys.map(diary => (
-        <DiaryRow key={diary.diaryId} diary={diary} setPopupText={setPopupText}/>
+        <DiaryRow key={diary.diaryId} diary={diary} setPopupText={setPopupText} setAlert={setAlert}/>
       ))
     }
   </tbody>
