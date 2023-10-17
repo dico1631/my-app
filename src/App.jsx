@@ -1,20 +1,22 @@
-import diaryData from "./diary.json"
+import diaryData from "./diary.json";
 
-import { Routes, Route } from 'react-router-dom';
+import Header from "./component/layout/Header";
+import Footer from "./component/layout/Footer";
 
-import DiaryListPage from "./component/DiaryListPage";
+import DiaryListPage from "./component/pages/DiaryListPage";
+import DiaryDetailPage from "./component/pages/DiaryDetailPage";
 
 const diarys = diaryData.diaryData;
 
-const App = () => {
-  return (
-    <div>
-      <h1>나의 일기</h1>
-      <Routes>
-        <DiaryListPage diarys={diarys} />
-      </Routes>
-    </div>
-  ); 
-}
+const App = () => (
+  <div>
+    <Header />
+    <main>
+      <DiaryListPage diarys={diarys} />
+      <DiaryDetailPage diarys={diarys} />
+    </main>
+    <Footer />
+  </div>
+);
 
 export default App;

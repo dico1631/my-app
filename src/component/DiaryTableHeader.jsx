@@ -7,6 +7,6 @@ const DiaryTableHeader = () => (
       <th>삭제</th>
     </tr>
   </thead>
-)
+);
 
 export default DiaryTableHeader;

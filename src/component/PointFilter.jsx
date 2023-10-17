@@ -1,5 +1,4 @@
-const PointFilter = ({point, setPoint}) => {
-
+const PointFilter = ({ point, setPoint }) => {
   const changePoint = event => setPoint(event.target.value);
 
   return (
