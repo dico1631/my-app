@@ -1,5 +1,5 @@
-const DiaryDetailPage = ({ diarys }) => (
-  <div>detail</div>
+const DiaryDetailPage = ({ diary }) => (
+  <div>{diary}</div>
 );
 
 export default DiaryDetailPage;

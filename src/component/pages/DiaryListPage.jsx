@@ -7,8 +7,6 @@ import SearchBar from "../SearchBar";
 import DiaryTable from "../DiaryTable";
 import AlertPopup from "../popup/AlertPopup";
 
-DiaryListPage.propTypes = AllProps;
-
 const DiaryListPage = ({ diarys }) => {
   const [point, setPoint] = useState(0);
   const [searchText, setSearchText] = useState('');
@@ -27,5 +25,7 @@ const DiaryListPage = ({ diarys }) => {
     </>
   );
 };
+
+DiaryListPage.propTypes = AllProps;
 
 export default DiaryListPage;

@@ -1,6 +1,6 @@
 const AlertPopup = ({ popupText, setAlert }) => {
   const closePopup = () => setAlert(false);
-  const deleteDiary = () => {
+  const confirmLogic = () => {
     // 일기 삭제 로직
     setAlert(false);
   };
@@ -10,7 +10,7 @@ const AlertPopup = ({ popupText, setAlert }) => {
     <aside>
       <span>{popupText}</span>
       <button onClick={closePopup}>취소</button>
-      <button onClick={deleteDiary}>확인</button>
+      <button onClick={confirmLogic}>확인</button>
     </aside>
   );
 };
