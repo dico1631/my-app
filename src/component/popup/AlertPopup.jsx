@@ -1,8 +1,11 @@
 const AlertPopup = ({ popupText, setAlert }) => {
-  const closePopup = () => setAlert(false);
-  const confirmLogic = () => {
-    // 일기 삭제 로직
+  const closePopup = () => {
     setAlert(false);
+    return false;
+  };
+  const confirmLogic = () => {
+    setAlert(false);
+    return true;
   };
 
 
