@@ -5,6 +5,7 @@ import Footer from "./component/layout/Footer";
 
 import DiaryListPage from "./component/pages/DiaryListPage";
 import DiaryDetailPage from "./component/pages/DiaryDetailPage";
+import DiaryFormPage from './component/pages/DiaryFormPage';
 
 const App = () => (
   <BrowserRouter>
@@ -13,8 +14,8 @@ const App = () => (
       <main>
         <Routes>
           <Route path='/' element={<DiaryListPage />}/>
-          <Route path='/detail/:id' element={<DiaryDetailPage />}
-            />
+          <Route path='/form' element={<DiaryFormPage />}/>
+          <Route path='/detail/:id' element={<DiaryDetailPage />}/>
         </Routes>
       </main>
       <Footer />

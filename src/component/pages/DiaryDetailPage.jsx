@@ -5,7 +5,7 @@ const DiaryDetailPage = () => {
   const params = useParams();
   const nowDiaryId = params.id;
   const filteredDiary = diarys.filter(diary => diary.diaryId == nowDiaryId)[0];
-  let starPoint = ""
+  let starPoint = "";
   for(let i=0; i<filteredDiary.point; i++){
     starPoint += "*"
   }
