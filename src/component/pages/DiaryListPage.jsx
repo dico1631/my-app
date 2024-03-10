@@ -8,6 +8,7 @@ import { AllProps } from '../../types/prop-types';
 
 import SearchBar from "../SearchBar";
 import DiaryTable from "../DiaryTable";
+import { Link } from "react-router-dom";
 // import AlertPopup from "../popup/AlertPopup";
 
 const DiaryListPage = () => {
@@ -23,7 +24,7 @@ const DiaryListPage = () => {
 
   return (
     <>
-      <button><Link to="/form">등록</Link></button>
+      <button><Link to="/form" state={{ diaryLength: originalData.length }}>등록</Link></button>
       <SearchBar point={point} setPoint={setPoint} searchText={searchText} setSearchText={setSearchText}/>
       <DiaryTable diarys={fliteredDiarys} setPopupText={setPopupText} setAlert={setAlert} setOriginalData={setOriginalData}/>
       {/* {alert && <AlertPopup popupText={popupText} setAlert={setAlert} diarys={diarys}/>} */}
