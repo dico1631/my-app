@@ -4,6 +4,7 @@ import Header from "./component/layout/Header";
 import Footer from "./component/layout/Footer";
 
 import DiaryListPage from "./component/pages/DiaryListPage";
+import DiaryFormPage from "./component/pages/DiaryFormPage";
 import DiaryDetailPage from "./component/pages/DiaryDetailPage";
 
 const App = () => (
@@ -13,8 +14,8 @@ const App = () => (
       <main>
         <Routes>
           <Route path='/' element={<DiaryListPage />}/>
-          <Route path='/detail/:id' element={<DiaryDetailPage />}
-            />
+          <Route path='/form' element={<DiaryFormPage />}/>
+          <Route path='/detail/:id' element={<DiaryDetailPage />}/>
         </Routes>
       </main>
       <Footer />

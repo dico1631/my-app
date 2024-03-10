@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 import diarys from "../fetch/fetchDiary";
 
@@ -22,6 +23,7 @@ const DiaryListPage = () => {
 
   return (
     <>
+      <button><Link to="/form">등록</Link></button>
       <SearchBar point={point} setPoint={setPoint} searchText={searchText} setSearchText={setSearchText}/>
       <DiaryTable diarys={fliteredDiarys} setPopupText={setPopupText} setAlert={setAlert} setOriginalData={setOriginalData}/>
       {/* {alert && <AlertPopup popupText={popupText} setAlert={setAlert} diarys={diarys}/>} */}
