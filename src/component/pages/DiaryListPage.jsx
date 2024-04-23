@@ -1,13 +1,15 @@
 
 import { useState } from "react";
 
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import { AllProps } from '../../types/prop-types';
+
 import diarys from "../fetch/fetchDiary";
 
-import { AllProps } from '../../types/prop-types';
 
 import SearchBar from "../SearchBar";
 import DiaryTable from "../DiaryTable";
-import { Link } from "react-router-dom";
 // import AlertPopup from "../popup/AlertPopup";
 
 const DiaryListPage = () => {
