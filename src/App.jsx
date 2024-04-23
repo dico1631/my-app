@@ -4,6 +4,7 @@ import Header from "./component/layout/Header";
 import Footer from "./component/layout/Footer";
 
 import DiaryListPage from "./component/pages/DiaryListPage";
+import DiaryFormPage from "./component/pages/DiaryFormPage";
 import DiaryDetailPage from "./component/pages/DiaryDetailPage";
 import DiaryFormPage from './component/pages/DiaryFormPage';
 

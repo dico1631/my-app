@@ -6,12 +6,11 @@ import { useLocation } from "react-router-dom/dist";
 
 const DiaryFormPage = () => {
 
-  const location = useLocation(); 
+  const location = useLocation();
   const nowDiaryOrder = location.state.diaryLength;
 
   const today = new Date();
   const formattedDate = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
-  
   const [point, setPoint] = useState('');
 
   const formData = {diaryId: nowDiaryOrder + 1, point: 0, title: "", content: "", data: formattedDate};
@@ -38,7 +37,7 @@ const DiaryFormPage = () => {
         <label htmlFor="DiaryTitle">제목</label>
         <input type="text" name="title" id="DiaryTitle" onChange={putFormData} placeholder="제목을 입력해주세요."/>
       </div>
-      
+
       <div>
         <label htmlFor="DiaryContent">내용</label>
         <textarea name="content" id="DiaryContent" cols="30" rows="10" onChange={putFormData} placeholder="내용을 입력해주세요."></textarea>
